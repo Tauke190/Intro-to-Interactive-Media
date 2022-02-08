@@ -1,7 +1,8 @@
 # Assignment 2 
 ## The Recursive tree
 
-![image](Tree.png)
+<img width="595" alt="Tree" src="https://user-images.githubusercontent.com/31856059/152924719-50d2da7e-3f65-4d27-a6e8-16a5687fb3c7.png">
+
 
 ````
 
