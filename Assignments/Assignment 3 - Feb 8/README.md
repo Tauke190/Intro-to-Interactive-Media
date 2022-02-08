@@ -72,5 +72,15 @@ function DrawBranch()
 
 ````
 
+### Process 
+
+I used recursion to draw the branches of the tree and the change the color of the branch using a palatte.The branch expands into 4 branches in one step.As we keep 
+on increasing step , the tree starts to form its shape.I used translate and rotate function to make things easier.
+
+
+### Challenges 
+1. Understanding Push() and Pop() Function
+2. Carrying out the transformation
+
 
 
