@@ -2,6 +2,11 @@
 
 ## Generative Flowers Art
 
+
+##Concept 
+
+The generative art piece is inspired from spring season when flowers bloom from long hauling winter.Like flowers , we should also bloom and grow with colors in our life
+
 #### Class for flower and the function that draws and animate the flower petals
 ````
 class Flower                   //Class for flowers 
