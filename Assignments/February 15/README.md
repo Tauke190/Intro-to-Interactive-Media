@@ -56,5 +56,4 @@ class Flower                   //Class for flowers
   }
 }
 ````
-![Uploading flowerart.gif…]()
 
