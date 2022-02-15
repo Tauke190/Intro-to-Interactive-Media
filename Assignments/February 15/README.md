@@ -63,5 +63,19 @@ class Flower                   //Class for flowers
 ````
 
 
+###Challenges 
+1. Figuring out out push and pop works with rotate transformation 
+2. Drawing the petals perfectly symmetrical to each other 
+3. Growing the flowers and reseting once it hits a certain scale 
+
+
+###Things I learned 
+1. You add GIF files into your READ.md by converting your video into GIF first and then importing to your github 
+2. Learned about the alpha channel in the fill and color function 
+3. Learned how to use rotate transformation properly and reset it.
+
+
+
+
 
 
