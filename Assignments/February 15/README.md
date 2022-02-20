@@ -27,7 +27,7 @@ class Flower                   //Class for flowers
   }
   
                          //gameloop of this class 
-                         //The purpose of the run function is to extend the functionality of the classes further where it needs to update other things.         run()                   
+                         //The purpose of the run function is to extend the functionality of the classes further where it needs to update other things.             run()                   
  {
    this.draw();
  }
