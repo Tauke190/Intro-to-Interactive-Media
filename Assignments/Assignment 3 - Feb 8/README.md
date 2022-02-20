@@ -5,7 +5,6 @@
 
 
 ````
-
 function DrawBranch()                                    //The recursive function that draws the branch recursively
 {
  
@@ -13,21 +12,15 @@ function DrawBranch()                                    //The recursive functio
   let length = 140/ (2 * level + 1)*random(0.7,1.5);      //length of branc  gets smaller as level increases  
   let thickness = 12 / (2 * level + 1);                   //thickness of the branches decrease as level increases 
   
-
-  
   stroke(palette[level]);                               //Selects a random color from the palette 
   strokeWeight(thickness);
-  
   push();                                                //new drawing state
-  
   if(level!=0)
   {
       rotate(-0.5*(split-1)*angle);                     // if branch do not rotate the truck otherwise do 
-  }
-    
+  } 
   line(0,0,0,length);                                    // The only drawing code that draws the line
   translate(0,length);                                   // Traslates to the increase y side since its flipped it grows up
-
   if(level < maxlevel - 1)
   {
     level++;
@@ -37,11 +30,8 @@ function DrawBranch()                                    //The recursive functio
         rotate(angle);
       }
     level--;
- 
   }
-   
   pop();
- 
 }
 
 ````
