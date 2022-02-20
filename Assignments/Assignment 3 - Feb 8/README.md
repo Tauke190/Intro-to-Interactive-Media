@@ -56,5 +56,8 @@ on increasing step , the tree starts to form its shape.I used translate and rota
 1. Understanding Push() and Pop() Function
 2. Carrying out the transformation
 
-
+### Thing I learned 
+1. Change Drawing state by using Push() and Pop() effectively 
+2. Graphical Recursion 
+3. Use of Rotate function 
 
