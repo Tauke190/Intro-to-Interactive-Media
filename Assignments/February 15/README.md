@@ -45,7 +45,7 @@ class Flower                   //Class for flowers
       if(this.size < 400)                        
       {
         //draws the petals of flower
-        ellipse(this.posX,this.posY + this.size/20,10+this.size                               /40,20+this.size/20);
+        ellipse(this.posX,this.posY + this.size/20,10+this.size/40,20+this.size/20);
         
         //rotate the petals to make it look like a flower 
         
