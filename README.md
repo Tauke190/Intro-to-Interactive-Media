@@ -15,6 +15,7 @@ I imported data from the CSV file and visualized it in the bar graph
 
 
 ### Process 
+````loadtoTable()```` function minimized my work on splitting the strings as this function automatically converts csv to a 2D array.I iterated through that array and mapped the values from the rows and colums to the rectangle as seen in the image.For the generative text part, I used ```textToFont()```` to gather the points from the text outline and manipulate those points from lines using simple repeating transformation.
 
 
 ### Things that I learned 
