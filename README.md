@@ -4,7 +4,8 @@
 I played with the vertex of the text and created a aesthetic looking effect by drawing a line from the points of the text outline and transforming it
 
 ## Data Visualization 
-This application visualizes the annual electricity consumption in the UAE from the year 2010.I imported data from the CSV file and visualized it in the bar graph 
+This application visualizes the annual electricity consumption in the UAE from the year 2010.
+I imported data from the CSV file and visualized it in the bar graph 
 [Dataset can be found here:](https://addata.gov.ae/dataset/electricity-consumption)
 
 
