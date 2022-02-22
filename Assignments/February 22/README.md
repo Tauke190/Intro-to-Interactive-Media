@@ -1,8 +1,11 @@
 
 # Generative Art and Data Visualization 
 
+![showcase](https://user-images.githubusercontent.com/31856059/155204539-5427138c-1a52-4ab1-ade8-a81549c57f81.png)
 ## Generative Art 
 I played with the vertex of the text and created a aesthetic looking effect by drawing a line from the points of the text outline and transforming it
+
+
 
 ## Data Visualization 
 This application visualizes the annual electricity consumption in the UAE from the year 2010.
