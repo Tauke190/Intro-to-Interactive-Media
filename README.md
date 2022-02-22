@@ -5,7 +5,7 @@ I played with the vertex of the text and created a aesthetic looking effect by d
 
 ## Data Visualization 
 This application visualizes the annual electricity consumption in the UAE from the year 2010.I imported data from the CSV file and visualized it in the bar graph 
-[Dataset can be found here]:https://addata.gov.ae/dataset/electricity-consumption
+[Dataset can be found here:](https://addata.gov.ae/dataset/electricity-consumption)
 
 
 
