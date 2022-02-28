@@ -1,5 +1,11 @@
 # Campus Cat Jump
 
+
+
+### How to play 
+Use the arrow keys to go left and right and try to land on the block 
+
+
 ## [Play the game here](https://editor.p5js.org/Avinash190/full/YxcEFnlSN)
 
 
