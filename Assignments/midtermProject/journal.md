@@ -35,6 +35,6 @@ Campus Cat jump is a doodle jump type of game where the main character is the ca
 7. The generation of the platform is done using ````noise()```` function which makes a pattern while instantiating the blocks
 8. Other features are still in progess 
 
-https://github.com/Tauke190/Intro-to-Interactive-Media/blob/master/Assignments/midtermProject/Screen%20Shot%202022-03-08%20at%2010.01.59.png?raw=true
+![ScreenShot](https://github.com/Tauke190/Intro-to-Interactive-Media/blob/master/Assignments/midtermProject/Screen%20Shot%202022-03-08%20at%2010.01.59.png?raw=true)
 
 
