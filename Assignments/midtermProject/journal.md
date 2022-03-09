@@ -13,7 +13,7 @@ Intial Sketches are show below
 
 
 
-
+![Idea](https://github.com/Tauke190/Intro-to-Interactive-Media/blob/master/idea1.jpg?raw=true)
 
 
 
