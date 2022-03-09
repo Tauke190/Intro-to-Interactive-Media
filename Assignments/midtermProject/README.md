@@ -3,7 +3,7 @@
 
 
 ### How to play 
-Use the arrow keys to go left and right and try to land on the block 
+Use the arrow keys to go left and right and try to land on the block .When the cat does not reach a block , jump for 2 or 3 times .It will jump higher.
 
 
 ## [Play the game here](https://editor.p5js.org/Avinash190/full/YxcEFnlSN)
