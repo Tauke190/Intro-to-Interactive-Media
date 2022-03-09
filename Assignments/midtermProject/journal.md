@@ -74,8 +74,8 @@ This method simply adds the force to the vector
 ### Update2
 
 In the next update , I tried to add and draw the platforms in the screen.
-````function generateplatform(numbers) {                          //Draws the platforms in the level by instantiating platfrom
-                                                              // over y axis
+````
+function generateplatform(numbers) {                                                         
   for (let y = 0; y < numbers; y+=50) {
     for (let i = 0; i < 3; i++) {
       var x = noise(i, y) * width;                            //Noise is  the for the variance of the platfroms 
@@ -84,9 +84,10 @@ In the next update , I tried to add and draw the platforms in the screen.
       }
     }
   }
-}````
-I used ````noise()```` function to add randoness and uniformity in the platforms being generated.
+}
 ````
+I used ````noise()```` function to add randoness and uniformity in the platforms being generated.
+
 
 ## Update 3
 In the next update , i tried to add collision of the platform with the player.
