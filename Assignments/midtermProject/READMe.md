@@ -7,6 +7,7 @@ Use the arrow keys to go left and right and try to land on the block
 
 
 ## [Play the game here](https://editor.p5js.org/Avinash190/full/YxcEFnlSN)
+![ScreenShot](https://github.com/Tauke190/Intro-to-Interactive-Media/blob/master/Assignments/midtermProject/Screen%20Shot%202022-03-08%20at%2010.01.59.png?raw=true)
 
 
 ## Jumping from block to another 
@@ -35,6 +36,6 @@ Campus Cat jump is a doodle jump type of game where the main character is the ca
 7. The generation of the platform is done using ````noise()```` function which makes a pattern while instantiating the blocks
 8. Other features are still in progess 
 
-![ScreenShot](https://github.com/Tauke190/Intro-to-Interactive-Media/blob/master/Assignments/midtermProject/Screen%20Shot%202022-03-08%20at%2010.01.59.png?raw=true)
+
 
 
