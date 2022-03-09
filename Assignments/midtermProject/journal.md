@@ -38,6 +38,36 @@ It checks the collision between the playerbottom co-ordinate and the platform to
 
 
 
+# Testing and Progress 
+
+## Update 1
+So, after rough sketch in mind.I knew excatly what i needed to do to develop this game.So I made the classes.My first step was to make the player jump and the gravity act on it.
+
+ ````jump() {                          //jump function plays the sound and does force calculation and provides thrust to player
+    if (jumpsound.isPlaying()) {
+                                    //isPlaying() returns a boolean
+    this.velocity.y *= 0;
+    if (this.premaxAltitude == this.maxAltitude) {      // stronger hop as the altitude remains constant
+                                                          
+      this.force = constrain(this.force + 1, 12, 16);  //increase the force if the altitude is constant
+    } else {
+      this.force = 12;                                 //if not just make the force 12
+    }
+    this.applyforce(createVector(0, this.force));       //applying the force to the player
+    this.premaxAltitude = this.maxAltitude;
+  }````
+
+## Update 2
+
+## Update 3
+
+## Update 4
+
+## Update 5
+
+
+
+
 
 
 
