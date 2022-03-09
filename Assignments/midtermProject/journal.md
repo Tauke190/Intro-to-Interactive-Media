@@ -23,7 +23,7 @@ update method updates the co-ordinates of the player .This method applies a cons
 
 2. ````jump()````
 jump method applies vertical force to the player by incrementing the y-cordinate of the vector.It also constraints the vector so that player cannot do double jump and it also handles sound associated with jump.
-3. ```applyforce(force)```` 
+3. ````applyforce(force)```` 
 apply force just adds force to the vector 
 4. ````draw()````
 it draws the image of the player in the middle of the screen
