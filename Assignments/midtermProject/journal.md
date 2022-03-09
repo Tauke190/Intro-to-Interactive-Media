@@ -86,7 +86,7 @@ In the next update , I tried to add and draw the platforms in the screen.
   }
 }````
 I used ````noise()```` function to add randoness and uniformity in the platforms being generated.
-
+````
 
 ## Update 3
 In the next update , i tried to add collision of the platform with the player.
@@ -122,7 +122,8 @@ In the next update , i tried to add collision of the platform with the player.
       }
     }
     return false;
-  },,,,
+  }
+  ,,,,
   
 If the platformtop - doodlerbottom is smaller than player negative y component which is up because the y co-ordinates is flipped in p5js , and platform top < doodler bottom , we can know that doodle is above the platform.
 for the x-cordinate , if the left and right bound of the player is within the right and left bound of the platform , then it collides and return true.
