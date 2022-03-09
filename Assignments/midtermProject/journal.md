@@ -70,13 +70,61 @@ This method simply adds the force to the vector
  
  
 
- 
- 
-
 ## Update 2
 
-## Update 3
+In the next update , I tried to add and draw the platforms in the screen.
+````function generateplatform(numbers) {                          //Draws the platforms in the level by instantiating platfrom
+                                                              // over y axis
+  for (let y = 0; y < numbers; y+=50) {
+    for (let i = 0; i < 3; i++) {
+      var x = noise(i, y) * width;                            //Noise is  the for the variance of the platfroms 
+      if (noise(y, i) > 0.55) {                                // 0.4 is the threshold value.The more the threshold value ,                                                                 //the more the platforms will spawned apart                     
+        platforms.push(new Platform(x, y, 75, 30));
+      }
+    }
+  }
+}````
+I used ````noise()```` function to add randoness and uniformity in the platforms being generated.
 
+
+## Update 3
+In the next update , i tried to add collision of the platform with the player.
+
+````
+ collides(player) {
+    var platformTop = this.loc.y; // get the top y co-ordinate of the platform
+
+    var doodlerBottom = player.loc.y + player.size / 2 - 40; //gets the bottom y co-ordinate of the player
+
+    strokeWeight(5);
+
+    stroke(1, 255, 4);
+
+    if (
+      Math.abs(platformTop - doodlerBottom) < -player.velocity.y &&
+      platformTop < doodlerBottom // if the doodlerbottom is above the platform top
+    ) {
+      var platlx = this.loc.x; //platfrom lefter most bound
+      var platrx = this.loc.x + this.width; //platfrom righter most bound
+
+      var plx = player.loc.x - player.size / 2; //player leftermost bound
+      var prx = player.loc.x + player.size / 2; //player rightermost bound
+
+      stroke(128, 125, 124);
+
+      if (
+        (plx >= platlx && plx <= platrx) || //if the player bounds is well within the platfrom left and right bounds , return true for collsion
+        (prx >= platlx && prx <= platrx)
+      ) {
+        print("flag");
+        return true;
+      }
+    }
+    return false;
+  },,,,
+  
+If the platformtop - doodlerbottom is smaller than player negative y component which is up because the y co-ordinates is flipped in p5js , and platform top < doodler bottom , we can know that doodle is above the platform.
+for the x-cordinate , if the left and right bound of the player is within the right and left bound of the platform , then it collides and return true.
 ## Update 4
 
 ## Update 5
