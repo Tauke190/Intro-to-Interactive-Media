@@ -124,13 +124,50 @@ In the next update , i tried to add collision of the platform with the player.
     }
     return false;
   }
-  ,,,,
+````
   
 If the platformtop - doodlerbottom is smaller than player negative y component which is up because the y co-ordinates is flipped in p5js , and platform top < doodler bottom , we can know that doodle is above the platform.
 for the x-cordinate , if the left and right bound of the player is within the right and left bound of the platform , then it collides and return true.
+
 ## Update 4
 
+Then for my next goal , i had to update the platform position that created an illusion of it going down.So the platform draw function takes the player y co-ordinate and draws accordingly 
+
+````
+draw(playerY) {
+    //draws and updates the position of the platfrom
+    stroke(255);
+    strokeWeight(3);
+    fill(255, 123, 123);
+
+    // relative to player
+    if (playerY - this.loc.y < height / 2) {
+      //checks if it on screen or not
+      // on-screen
+
+      image(
+        img, //draws the sprite of the platform with the correct parameters
+        this.loc.x,
+        playerY - this.loc.y + height / 2,
+        this.width,
+        this.height
+      );
+
+      //image(img,0,0);
+    } else {
+      this.onScreen = false;
+    }
+ }
+ ````
+
+
 ## Update 5
+For the last part , I addded cat sprites and the platform slides.I added UI and sounds effects.This part is for playtesting and polishing of the game.Two of my friends played it.One found it frustating and one found it addicting gameplay
+
+
+# Playtesting 
+
+I made two of my friends play the game.One complained that the platforms was too high and the cat could not reach.Since it is random , i have no control of the platforms being generated.If i make it too close , it would affect the gameplay.So , there is a room for improvement.One of friend suggested that i should keep a enemy on the platform so the player does not jump to the platform with the enemy on it .I can also kill the enemy by jumping over his head.The retro music and graphics definetely made the game look asethetically pleasing and fun to play
 
 
 
