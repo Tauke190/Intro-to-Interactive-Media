@@ -40,7 +40,7 @@ It checks the collision between the playerbottom co-ordinate and the platform to
 
 # Testing and Progress 
 
-## Update 1
+### Update 1
 So, after rough sketch in mind.I knew excatly what i needed to do to develop this game.So I made the classes.My first step was to make the player jump and the gravity act on it.
 
  ````jump() 
@@ -89,7 +89,7 @@ function generateplatform(numbers) {
 I used ````noise()```` function to add randoness and uniformity in the platforms being generated.
 
 
-## Update 3
+### Update 3
 In the next update , i tried to add collision of the platform with the player.
 
 ````
@@ -129,7 +129,7 @@ In the next update , i tried to add collision of the platform with the player.
 If the platformtop - doodlerbottom is smaller than player negative y component which is up because the y co-ordinates is flipped in p5js , and platform top < doodler bottom , we can know that doodle is above the platform.
 for the x-cordinate , if the left and right bound of the player is within the right and left bound of the platform , then it collides and return true.
 
-## Update 4
+### Update 4
 
 Then for my next goal , i had to update the platform position that created an illusion of it going down.So the platform draw function takes the player y co-ordinate and draws accordingly 
 
@@ -161,7 +161,7 @@ draw(playerY) {
  ````
 
 
-## Update 5
+### Update 5
 For the last part , I addded cat sprites and the platform slides.I added UI and sounds effects.This part is for playtesting and polishing of the game.Two of my friends played it.One found it frustating and one found it addicting gameplay
 
 
