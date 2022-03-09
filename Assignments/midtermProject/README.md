@@ -7,7 +7,7 @@ Use the arrow keys to go left and right and try to land on the block
 
 
 ## [Play the game here](https://editor.p5js.org/Avinash190/full/YxcEFnlSN)
-![ScreenShot](https://github.com/Tauke190/Intro-to-Interactive-Media/blob/master/Assignments/midtermProject/Screen%20Shot%202022-03-08%20at%2010.01.59.png?raw=true)
+![ScreenShot](https://editor.p5js.org/Avinash190/full/YxcEFnlSN)
 
 
 ## Jumping from block to another 
