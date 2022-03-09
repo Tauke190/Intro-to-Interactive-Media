@@ -57,6 +57,7 @@ So, after rough sketch in mind.I knew excatly what i needed to do to develop thi
     this.applyforce(createVector(0, this.force));       
     this.premaxAltitude = this.maxAltitude;
   }
+  ````
    
  If the player keeps hoping on the same position , the force will slightly higher for the player to reach platforms at greater height or else it will 12.Then i added that force to a method called ````applyforce()````
  
@@ -70,7 +71,7 @@ This method simply adds the force to the vector
  
  
 
-## Update 2
+### Update2
 
 In the next update , I tried to add and draw the platforms in the screen.
 ````function generateplatform(numbers) {                          //Draws the platforms in the level by instantiating platfrom
