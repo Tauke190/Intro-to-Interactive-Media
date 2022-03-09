@@ -43,20 +43,35 @@ It checks the collision between the playerbottom co-ordinate and the platform to
 ## Update 1
 So, after rough sketch in mind.I knew excatly what i needed to do to develop this game.So I made the classes.My first step was to make the player jump and the gravity act on it.
 
- ````jump() {                          
-    if (jumpsound.isPlaying()) {
-                                    
+ ````jump() 
+ {                                                            
     this.velocity.y *= 0;
-    if (this.premaxAltitude == this.maxAltitude) {     
+    if (this.premaxAltitude == this.maxAltitude) 
+     {     
                                                           
-      this.force = constrain(this.force + 1, 12, 16);  
-    } else {
-      this.force = 12;                               
-    }
+       this.force = constrain(this.force + 1, 12, 16);  
+     } else
+     {
+       this.force = 12;                               
+     }
     this.applyforce(createVector(0, this.force));       
     this.premaxAltitude = this.maxAltitude;
   }
+   
+ If the player keeps hoping on the same position , the force will slightly higher for the player to reach platforms at greater height or else it will 12.Then i added that force to a method called ````applyforce()````
+ 
  ````
+  applyforce(force)
+  {
+    this.velocity.add(force);
+  }
+````
+This method simply adds the force to the vector
+ 
+ 
+
+ 
+ 
 
 ## Update 2
 
