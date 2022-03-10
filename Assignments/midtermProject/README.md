@@ -38,6 +38,9 @@ Campus Cat jump is a doodle jump type of game where the main character is the ca
 
 
 ### Feeback implementation 
+1. Alot of users said that the gameplay was very static and it becomes difficulty very gradually.So I increased the progression of the difficulty happening in the game.
+2. Alot of users also pointed out that the game was too easy and they didnt have to do anything at all and the game keeps on running.So, what i implemented was a way to set the platform apart from code.
+3. Some users were also complaning that the collision was not accurate.So ,I debugged and found out the problem and fixed it.
 
 
 
