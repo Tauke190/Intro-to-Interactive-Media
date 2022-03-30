@@ -7,10 +7,10 @@ A switch that is activated when the sensor detects a obstacle infront of you and
 
 
 ### Electronics
-1.Arduino UNO
-2.Ultra Sound Sensor
-3.BreadBoad
-4.Jumper Wires
+1. Arduino UNO
+2. Ultra Sound Sensor
+3. BreadBoad
+4. Jumper Wires
 
 
 ### Process
