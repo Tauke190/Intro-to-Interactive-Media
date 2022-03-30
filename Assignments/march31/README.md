@@ -14,7 +14,7 @@ A switch that is activated when the sensor detects a obstacle infront of you and
 
 
 ### Process
-There are 4 mins in the ultrasound sensor such as VCC,GND,TRIGG,ECHO.5V is connected to the VCC and GND from UNO is connected to GND from the sensor.The Echo pin is connected to PIN 10 and Trigg PIN is connected to PIN 11.In the Sensor , there is transsmitor which transmits sound waves of 40 Khz and a receiver which receives the signal when the sound waves are reflected by the obstacle.When the distance is below certain threshold , the light blinks and alterts the people.
+There are 4 PINS in the ultrasound sensor such as VCC,GND,TRIGG,ECHO.5V is connected to the VCC and GND from UNO is connected to GND from the sensor.The Echo pin is connected to PIN 10 and Trigg PIN is connected to PIN 11.In the Sensor , there is transmitter which transmits sound waves of 40 Khz and a receiver which receives the signal when the sound waves are reflected by the obstacle.When the distance is below certain threshold , the light blinks and alterts the people.
 <img width="698" alt="Screen Shot 2022-03-30 at 11 49 35 PM" src="https://user-images.githubusercontent.com/31856059/160919041-6c091903-6a0e-48eb-8eaa-ffa806993f28.png">
 ![IMG_20220330_233038](https://user-images.githubusercontent.com/31856059/160919219-e64db789-d68c-426e-b610-bc5098e2a5c4.jpg)
 
