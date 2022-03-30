@@ -64,3 +64,9 @@ void loop()
 
 
 ````
+
+### Discoveries 
+1.  I discovered how to use ultra sound sensor. 
+2.  I discovered how to use design arduino circuit diagram from tinkercad. 
+3.  I discovered how to use serial monitor.
+4.  I discovered how to use other senors.
