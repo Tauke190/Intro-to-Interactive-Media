@@ -20,6 +20,8 @@ There are 4 PINS in the ultrasound sensor such as VCC,GND,TRIGG,ECHO.5V is conne
 
 ![IMG_20220330_233038](https://user-images.githubusercontent.com/31856059/160920605-6b636e17-c981-460b-b71d-d735688146a7.jpg)
 
+### Circuit
+
 
 ### Program
 ````
