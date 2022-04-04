@@ -103,8 +103,8 @@ void switchLED(int timing)
 ````
 
 ### Discoveries 
-1.  I discovered how to use understand morsecode
-2.  I discovered how to use use the mapping function and use the analog read
+1.  I discovered how to use and understand morsecode
+2.  I discovered how to use  the mapping function and use the analog read
 3.  I discovered how to use serial monitor for analog signals.
 4.  I discovered how to use other senors.
 
