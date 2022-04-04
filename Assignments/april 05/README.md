@@ -1,5 +1,5 @@
 # MORSE CODE SPEED CONTROLLER
-A circuit that controls the speed of the LED blinking and giving a morse code through a potentiometer.If the potentiometer is set to higher value, the speed at which led blinks and gives our morse code is faster.
+A circuit that controls the speed of the LED blinking and giving a morse code through a potentiometer.If the potentiometer is set to higher value, the speed at which led blinks and gives out morse code is faster.
 
 
 
