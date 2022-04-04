@@ -15,7 +15,7 @@ A circuit that controls the speed of the LED blinking and giving a morse code th
 
 
 ### Process
-First, we use the analog pin to connect the potentiomenter and get its reading through analogRead. First , we begin the serial port and read the analogpin A2 and map the value from 300,100 for short blinking led and 1000,600 for long blinking led.So, if we increase the potentiometer , the rate at which morse code is sent will be faster.Here is the morse code chart.
+First, we use the analog pin to connect the potentiomenter and get its reading through analogRead. First , we begin the serial port and read the analogpin A2 and map the value from (300,100) for short blinking led and (1000,600) for long blinking led.So, if we increase the potentiometer , the rate at which morse code is sent will be faster.Here is the morse code chart.
 ![morse-chart_grande](https://user-images.githubusercontent.com/31856059/161624421-3648e430-f57d-4efc-b854-c6c233d92ffd.png)
 ![lol](https://user-images.githubusercontent.com/31856059/161627294-56df28e3-468f-4604-b438-5566049b5fc5.jpeg)
 
