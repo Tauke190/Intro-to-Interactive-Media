@@ -16,6 +16,7 @@ There are 4 PINS in the ultrasound sensor such as VCC,GND,TRIGG,ECHO.5V is conne
 Whenever the ball hits the ground , it sends the data to aruduino where the aruduino code analogWrite to the LED pin , the brightness values that keeps on summing up as the data from p5js comes continuosly whenever someone clicks a keyboard button.
 
 And for the Wind , it is controller by the ultrasonic sensor , the default wind is the left direction but when i put my hand in the ultrasound, it sends its distance data and the wind is on the right by updating its velocity.x and the ball moves in the right direction.
+![unnamed](https://user-images.githubusercontent.com/31856059/163872178-d6026d6e-0d7e-4e62-ad13-cc66df9bc3cb.jpeg)
 
 
 ## Watch the video here 
