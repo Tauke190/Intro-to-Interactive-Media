@@ -16,8 +16,8 @@ Whenever the ball hits the ground , it sends the data to aruduino where the arud
 
 And for the Wind , it is controller by the ultrasonic sensor , the default wind is the left direction but when i put my hand in the ultrasound, it sends its distance data and the wind is on the right by updating its velocity.x and the ball moves in the right direction.
 
-https://user-images.githubusercontent.com/31856059/163830745-081adfc7-f6bc-4923-a27c-3905f5eafcd6.MOV
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QhWaeshABNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Things I discoverd
