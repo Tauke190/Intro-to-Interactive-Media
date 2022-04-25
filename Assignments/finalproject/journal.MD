@@ -94,14 +94,14 @@ function showResult()
 Translate the speech which was generated from the speech into a specific language
 
 ### Step 4
-
+Send the translated speech into arduino using p5.serial
 For that i need to use P5 serial for serial communication with the aruduno
 
 1. Search for the port and connect to the port 
 2. ````Serial.write(foo.resultstring)```` where foo.resultstring is the converted string 
 3. It can send the string value directly 
-4. In the arduino it can receive the value using ````Serial.readStringUntil('\n')```` which will get the string value direclty
-Send the translated speech into arduino using p5.serial
+4. In the arduino, it can receive the string value directly using ````Serial.readStringUntil('\n')```` 
+
 
 ### Step 5
 Display the translated speech into LCD screen in the arduino 
