@@ -61,4 +61,57 @@ it transforms the string statement in a form of bytes and the arudino retrives i
 6. Arduino will receive the bits of string data and parse it and display in the LCD Display 
 
 
+# April 25
+Today we will dive deeper into the NLP Library in p5js.It is called p5.speech.Web Audio Speech Synthesis and Speech Recognition Implementation for p5.js 
+It was creted by R. Luke DuBois (dubois@nyu.edu) from NYU.
+
+## p5.speech
+
+p5.speech is a simple p5 extension to provide Web Speech (Synthesis and Recognition) API functionality. It consists of two object classes (p5.Speech and p5.SpeechRec) along with accessor functions to speak and listen for text, change parameters (synthesis voices, recognition models, etc.), and retrieve callbacks from the system.
+Speech recognition requires launching from a server using HTTPS (e.g. using a python server on a local machine… a ‘file’ URI won’t work).
+
+
+## Process 
+Step1- `(Include from CDN)````<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>````
+
+Step 2 - Create a Speech Rec Object 
+
+````
+var foo = new p5.SpeechRec(); // speech recognition object (will prompt for mic access)
+foo.onResult = showResult; // bind callback function to trigger when speech is recognized
+foo.start(); // start listening
+
+function showResult()
+{
+  console.log(foo.resultString); // log the result
+}
+````
+
+Step 3 - Translate the speech which was generated from the speech into a specific language
+
+Step 4 - Send the translated speech into arduino using p5.serial
+
+Step 5 - Display the translated speech into p5js
+
+
+
+https://user-images.githubusercontent.com/31856059/165151407-9d25f137-fb92-4d60-8999-f4c47675894b.mov
+
+
+
+
+### Fabrication 
+
+I am thinking of miniaturizing the circuit using arduino nano.I will be using a thick cloth mask and put all the circuits inside the mask and make the device portal.I will power the circuit using miniature batteries.I will attach the LED display at the front of the mask.I am thinking of using a wireless module also for transmitting data from p5js to arudino where it will display the text.
+
+![download](https://user-images.githubusercontent.com/31856059/165151471-40971e46-93e7-42ba-aeef-02a567c7880c.jpeg)
+
+
+
+
+
+
+
+
+
 ### This is a solo project.
