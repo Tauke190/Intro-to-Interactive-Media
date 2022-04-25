@@ -61,7 +61,7 @@ it transforms the string statement in a form of bytes and the arudino retrives i
 6. Arduino will receive the bits of string data and parse it and display in the LCD Display 
 
 
-#ins>April 22</ins> April 25
+# <ins> April 25 </ins> 
 Today we will dive deeper into the NLP Library in p5js.It is called p5.speech.Web Audio Speech Synthesis and Speech Recognition Implementation for p5.js 
 It was creted by R. Luke DuBois (dubois@nyu.edu) from NYU.
 
