@@ -72,9 +72,11 @@ Speech recognition requires launching from a server using HTTPS (e.g. using a py
 
 
 ## Process 
-Step1- `(Include from CDN)````<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>````
+### Step 1
+`(Include from CDN)````<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>````
 
-Step 2 - Create a Speech Rec Object 
+### Step 2 
+ Create a Speech Rec Object 
 
 ````
 var foo = new p5.SpeechRec(); // speech recognition object (will prompt for mic access)
@@ -87,11 +89,14 @@ function showResult()
 }
 ````
 
-Step 3 - Translate the speech which was generated from the speech into a specific language
+### Step 3 
+Translate the speech which was generated from the speech into a specific language
 
-Step 4 - Send the translated speech into arduino using p5.serial
+### Step 4
+Send the translated speech into arduino using p5.serial
 
-Step 5 - Display the translated speech into p5js
+### Step 5
+Display the translated speech into p5js
 
 
 
