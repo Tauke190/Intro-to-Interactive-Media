@@ -127,17 +127,17 @@ I am thinking of miniaturizing the circuit using arduino nano.I will be using a 
 
 
 
-### What didnt work ?
+## What didnt work ?
 
 I could not find a Translation API that works with the p5js.Basically what i want is , convert "Hello" into "Ola" using some Language translation API and print that to the LCD Display. Also, the wireless module is not working.I want to send data not using serial port but by using a bluetooth or wireless transmission module so i can make my device portable.
 
 
-### What you think is the next most riskiest, complicated, or unknown part of your project and your plan to solve that ?
+## What you think is the next most riskiest, complicated, or unknown part of your project and your plan to solve that ?
 
 I think it is the language translation API. I need to connect p5js to a cloud API , send data and receive the translated data and finally send back to arduino.I am thiking of using google cloud Translation API. The most complicated part is to understand how the google cloud API works and the data transmission between the p5js.
 
 
-### Mechanical, fabrication, and construction issues
+## Mechanical, fabrication, and construction issues
 
 I want to make my device comfortable and portal.So the issues is how am i going to fit all the electronics and batteries into the cloth mask without making it uncomfortable.For that I am using arduino Nano, thin PCD boards and small batteries.Still , I need to do the user testing to really know if it comfortable or not.
 
