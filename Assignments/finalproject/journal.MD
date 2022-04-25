@@ -94,10 +94,22 @@ function showResult()
 Translate the speech which was generated from the speech into a specific language
 
 ### Step 4
+
+For that i need to use P5 serial for serial communication with the aruduno
+
+1. Search for the port and connect to the port 
+2. ````Serial.write(foo.resultstring)```` where foo.resultstring is the converted string 
+3. It can send the string value directly 
+4. In the arduino it can receive the value using ````Serial.readStringUntil('\n')```` which will get the string value direclty
 Send the translated speech into arduino using p5.serial
 
 ### Step 5
-Display the translated speech into p5js
+Display the translated speech into LCD screen in the arduino 
+
+
+1. We work with the LiquidCystalLibrary by ````#include <LiquidCrystal.h>````
+2. We create a LCD object with specific pin s ````LiquidCrystal lcd(rs, en, d4, d5, d6, d7)````
+3. After we receive the string from p5.js, we print it ````lcd.print(receivedString)````
 
 
 
