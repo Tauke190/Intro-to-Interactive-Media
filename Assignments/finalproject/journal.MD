@@ -118,7 +118,7 @@ https://user-images.githubusercontent.com/31856059/165151407-9d25f137-fb92-4d60-
 
 
 
-### Fabrication 
+## Fabrication 
 
 I am thinking of miniaturizing the circuit using arduino nano.I will be using a thick cloth mask and put all the circuits inside the mask and make the device portal.I will power the circuit using miniature batteries.I will attach the LED display at the front of the mask.I am thinking of using a wireless module also for transmitting data from p5js to arudino where it will display the text.
 
