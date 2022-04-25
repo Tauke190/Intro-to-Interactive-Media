@@ -73,7 +73,8 @@ Speech recognition requires launching from a server using HTTPS (e.g. using a py
 
 ## Process 
 ### Step 1
-`(Include from CDN)````<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>````
+Include from CDN
+````<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>````
 
 ### Step 2 
  Create a Speech Rec Object 
