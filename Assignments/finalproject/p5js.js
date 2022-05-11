@@ -20,8 +20,8 @@ function showResult()
 {
  
   console.log(foo.resultString); // log the result
-  sendData(); 
-  istrigger = false;
+  sendData();                    //invokes a method that sends the data to ardunio through serial port
+  istrigger = false;             //is trigger is used for translating a sentence at a time 
 }
 
 function setup() 
