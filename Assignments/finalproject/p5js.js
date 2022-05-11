@@ -7,19 +7,21 @@ let acceleration;
 let wind;
 let drag = 0.99;
 let mass = 50;
+let currentString ="";
+let istrigger = false;
 
 //MIT License 
 
 
 var foo = new p5.SpeechRec(); // speech recognition object (will prompt for mic access)
 foo.onResult = showResult; // bind callback function to trigger when speech is recognized
-foo.start(); // start listening
 
 function showResult()
 {
  
   console.log(foo.resultString); // log the result
-  sendData();
+  sendData(); 
+  istrigger = false;
 }
 
 function setup() 
@@ -29,7 +31,7 @@ function setup()
  serial = new p5.SerialPort();
 
  serial.list();
- serial.open('/dev/tty.usbmodem14601');
+ serial.open('/dev/tty.usbmodem1101');
 
  serial.on('connected', serverConnected);
 
@@ -42,6 +44,7 @@ function setup()
  serial.on('open', gotOpen);
 
  serial.on('close', gotClose);
+
   
   
 //////
@@ -70,7 +73,6 @@ function gotList(thelist) {
 
 function gotOpen() {
  print("Serial Port is Open");
-  serial.write(0);
 }
 
 function gotClose(){
@@ -82,34 +84,44 @@ function gotError(theerror) {
  print(theerror);
 }
 
-function gotData() {
- let currentString = serial.readLine();
-  trim(currentString);
- if (!currentString) return;
- console.log(currentString);
- latestData = currentString;
+function gotData()
+{
+  
+  if(istrigger === false)
+    {
+      console.log("Start Speaking");
+      let currentString = serial.readLine();
+      trim(currentString);
+      latestData = currentString;
+      istrigger = true;
+      foo.start();
+      
+    }
+  
 }
 
-
-function sendData() {
+function sendData() 
+{ 
     let outByte = foo.resultString;
     console.log("Sending " + outByte);
-    //serial.write(Number(outByte)); // Send as byte value
     serial.write(outByte); // Send as a string/char/ascii value
 }
 
 
-function draw() {
+function draw() 
+{
  background(255,255,255);
  fill(0,0,0);
  text(latestData, 10, 10);
+ console.log(latestData)
  fill(122,234,1);
  
 }
 
-function keyPressed(){
-  if (keyCode==' ')
+function keyPressed() {
+  if (keyCode === RIGHT_ARROW) 
   {
-    foo.start();
+      console.log("Start Speaking");
+      foo.start();
   }
 }
