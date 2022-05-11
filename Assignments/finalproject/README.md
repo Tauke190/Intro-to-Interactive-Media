@@ -139,6 +139,10 @@ function sendData()
 }
 ````
 
+## Schematics 
+
+<img width="1877" alt="Screen Shot 2022-05-12 at 1 38 25 AM" src="https://user-images.githubusercontent.com/31856059/167952332-4eb07b29-b80d-4c8b-8023-65db4182dc48.png">
+
 
 ## Major Problems 
 
