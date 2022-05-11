@@ -24,7 +24,9 @@ For my display , I have used basic 16x2 LCD display from sparkfun electronics.Th
 
 
 Overview of your programs (Arduino and P5.js) and your circuitry
-![00709-action](https://user-images.githubusercontent.com/31856059/167933283-bac3c407-88b9-4a30-9408-a60c50207d50.jpeg)
+
+
+![00709-action](https://user-images.githubusercontent.com/31856059/167937396-af213f9c-96aa-4968-9b75-f23d8bd4e783.jpeg)
 
 
 ![Character_LCD_Pinout](https://user-images.githubusercontent.com/31856059/167933617-cdb03a03-93dd-40de-91ee-2f9a2b1fd689.png)
