@@ -162,6 +162,31 @@ I was intially thiking for a translation mask but LCD could not display non-engl
 
 
 
+## References
+
+1. https://learn.sparkfun.com/tutorials/basic-character-lcd-hookup-guide?_ga=2.180098212.1813708937.1652298427-1081971137.1652298427
+2. Web Audio Speech Synthesis and Speech Recognition Implementation for p5.js (http://p5js.org)R. Luke DuBois (dubois@nyu.edu)
+   ABILITY Project / Integrated Design & Media,NYU
+   
+   
+## p5.js sketch
+https://editor.p5js.org/Avinash190/full/PLFskDQbw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
