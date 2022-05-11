@@ -152,12 +152,12 @@ I was intially thiking for a translation mask but LCD could not display non-engl
 
 ## Discoveries 
 
-1. I Discovered the Natural Language processing implementation in p5js which is a very useful library.
-2. I Learned how to work with LCD Display and use its backlight functionality.
-3. I Discovered how to display customs graphics in the LCD display.
-4. I Discovered few problems with serial communication implementation and resolved it.
-5. I Discovered that arudiuno fio is a minituriazed version of arduino uno
-6. I Discovered that you need a seperate circuit to upload the code to arduino nano.
+1. I discovered the Natural Language processing implementation in p5js which is a very useful library.
+2. I learned how to work with LCD Display and use its backlight functionality.
+3. I discovered how to display customs graphics in the LCD display.
+4. I discovered few problems with serial communication implementation and resolved it.
+5. I discovered that arudiuno fio is a minituriazed version of arduino uno
+6. I discovered that you need a seperate circuit to upload the code to arduino nano.
 
 
 
