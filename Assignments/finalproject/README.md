@@ -70,6 +70,110 @@ void set_message(String message)
 
 ## p5js 
 
+In the p5js,I have used p5.speech which is a simple p5 extension to provide Web Speech (Synthesis and Recognition) API functionality. It consists of two object classes (p5.Speech and p5.SpeechRec) along with accessor functions to speak and listen for text, change parameters (synthesis voices, recognition models, etc.), and retrieve callbacks from the system. Speech recognition requires launching from a server using HTTPS.
+
+## Process 
+### Step 1
+Include from CDN
+````<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>````
+
+### Step 2 
+ Create a Speech Rec Object 
+
+````
+var foo = new p5.SpeechRec(); // speech recognition object (will prompt for mic access)
+foo.onResult = showResult; // bind callback function to trigger when speech is recognized
+foo.start(); // start listening
+
+function showResult()
+{
+  console.log(foo.resultString); // log the result
+}
+````
+
+### Step 3 
+Translate the speech which was generated from the speech into a specific language
+
+### Step 4
+Send the translated speech into arduino using p5.serial
+For that i need to use P5 serial for serial communication with the aruduno
+
+1. Search for the port and connect to the port 
+2. ````Serial.write(foo.resultstring)```` where foo.resultstring is the converted string 
+3. It can send the string value directly 
+4. In the arduino, it can receive the string value directly using ````Serial.readStringUntil('\n')```` 
+
+
+### Step 5
+Display the translated speech into LCD screen in the arduino 
+
+
+1. We work with the LiquidCystalLibrary by ````#include <LiquidCrystal.h>````
+2. We create a LCD object with specific pin s ````LiquidCrystal lcd(rs, en, d4, d5, d6, d7)````
+3. After we receive the string from p5.js, we print it ````lcd.print(receivedString)````
+
+
+
+### Video 
+
+
+### P5js.code
+
+````
+var foo = new p5.SpeechRec(); // speech recognition object (will prompt for mic access)
+foo.onResult = showResult; // bind callback function to trigger when speech is recognized
+
+function showResult()
+{
+ 
+  console.log(foo.resultString); // log the result
+  sendData();                    //invokes a method that sends the data to ardunio through serial port
+  istrigger = false;             //is trigger is used for translating a sentence at a time 
+}
+
+function sendData() 
+{ 
+    let outByte = foo.resultString;
+    console.log("Sending " + outByte);
+    serial.write(outByte); // Send as a string/char/ascii value
+}
+````
+
+
+## Major Problems 
+
+I was intially thiking for a translation mask but LCD could not display non-english characters so I settled for Speech to text translation mask.Another problem was the limited availibility of Language translation plugins or libraries implementd in p5js.
+
+1.  I had major problems with the serial communication between the aruduino and p5js.The arudino first had to send data to p5js to activate to activate the speech to text translation and then p5js would send the data to the arudino and LCD to be displayed.The problem arised when i kept pressing the button on the arudino which would instantiate many instances of Speechrec object and the program would crash 
+2.  I was originally planning to miniturize the circuits but had issues with soldering.I managed to get it working with aruduino UNO itself
+3.  Problems with LCD Displays not lighting up
+
+
+
+## Discoveries 
+
+1. I Discovered the Natural Language processing implementation in p5js which is a very useful library.
+2. I Learned how to work with LCD Display and use its backlight functionality.
+3. I Discovered how to display customs graphics in the LCD display.
+4. I Discovered few problems with serial communication implementation and resolved it.
+5. I Discovered that arudiuno fio is a minituriazed version of arduino uno
+6. I Discovered that you need a seperate circuit to upload the code to arduino nano.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
