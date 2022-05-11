@@ -47,21 +47,20 @@ void loop()
    
    //(note: line 1 is the second row, since counting begins with 0):
 
-  lcd.setCursor(0, 1);
+  lcd.setCursor(0, 1);   // activates the cursor to 1 meaning that text can be displayed in the 1 st row of the 2 rows.
   while(Serial.available() > 0)
   {
-     lcd.clear();
-     //set the cursor to column 0, line 1
-    String incomingString = Serial.readStringUntil('\n');
-    set_message(incomingString);
+     lcd.clear();                           //erases all the data previously held in the LCD Display           
+    String incomingString = Serial.readStringUntil('\n'); //function of Serial class which can read the string directly sent from p5js. 
+    set_message(incomingString);                           //activates the LCD display function by setting the string to the Display
     Serial.print("I received: ");
     Serial.println(incomingString);
   }
  
 }
-
 void set_message(String message)
 {
-    lcd.clear();
-    lcd.print(message); 
+    lcd.clear();                            //Resets the data to be used for next translation
+    lcd.print(message);                     //method of lcd object which parses string and transmits to different channels in the lCD to be displayed as 
+                                              a string.
 }
