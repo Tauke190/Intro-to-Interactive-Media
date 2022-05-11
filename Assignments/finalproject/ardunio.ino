@@ -60,7 +60,7 @@ void loop()
 }
 void set_message(String message)
 {
-    lcd.clear();                            //Resets the data to be used for next translation
-    lcd.print(message);                     //method of lcd object which parses string and transmits to different channels in the lCD to be displayed as 
-                                              a string.
+    lcd.clear();               //Resets the data to be used for next translation
+    lcd.print(message);        //method of lcd object which parses string and transmits to different channels in the lCD to be displayed as a string
+                                              
 }
