@@ -61,7 +61,7 @@ it transforms the string statement in a form of bytes and the arudino retrives i
 6. Arduino will receive the bits of string data and parse it and display in the LCD Display 
 
 
-# <ins> April 25 </ins> 
+# <ins> April 25 -Update 1 </ins> 
 Today we will dive deeper into the NLP Library in p5js.It is called p5.speech.Web Audio Speech Synthesis and Speech Recognition Implementation for p5.js 
 It was creted by R. Luke DuBois (dubois@nyu.edu) from NYU.
 
@@ -141,6 +141,26 @@ I think it is the language translation API. I need to connect p5js to a cloud AP
 
 I want to make my device comfortable and portal.So the issues is how am i going to fit all the electronics and batteries into the cloth mask without making it uncomfortable.For that I am using arduino Nano, thin PCD boards and small batteries.Still , I need to do the user testing to really know if it comfortable or not.
 
+
+# <ins>April 26-Update 2</ins>
+
+So after planning my problem , i started building my project.The main component of the project was how to send string data from p5js to arduino.In class , we had only studied about sending bytes or ints.So I thought sending string was also the same but it did not work.You can send string send with ````Serial.read()````.
+So, I thought of parisng string into binary stream of data and send that one by one to arduino.Then , i designed a program that fetches those stream and decrypts the information that was originally sent.I ran into alot of complication in that method until i found something awesome.
+
+I came across ````Serial.readStringUntil('\n')````This method can directly allow me to read and string into the arduino.Next steps was putting all the bits and pieces together.
+
+
+# <ins>April 30-Update 2</ins>
+
+Then I decided to use arduino Fio as my microprocessor.The design is similar to arudino UNO but you need an extra module to transfer data into it.I soldered the header pins into the arudino fio.Afterwards , I had problems soldering it in the board.It was so small that it was very difficult to solder the pins properly and i ran across many problems.Finally I decided to user arudino UNO itself.
+
+# <ins>May 4-Update 2</ins>
+
+I built the LCD circuit with aruduino UNO.I could control what i could display through the code but i had to recompile the program every single time.I hooked the arudino code with the p5js code so that the string that is to be displayed comes direclty from the processed input in the p5js.
+Viola , it worked as planned.I could speak and english word and then it displays the word on the LCD.The problem was that the next word used to be concatenated with the previous word.There was a simple solution.I basically had to clear the LCD screen for the next word.
+
+# <ins>May 10-Update 2</ins>
+Next , I started hot gluing everything together and testing it out with my friends.They suggested me that i should add a switch so that i can only display whenever i have pressed the switch to prevent the p5js program listening to you all the time and crashing too.So I added a switch button to the circuit.so,you have to press the switch , say something and it will processed and displayed on the screen.
 
 
 
