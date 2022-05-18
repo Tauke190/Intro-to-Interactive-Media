@@ -164,7 +164,8 @@ I was intially thiking for a translation mask but LCD could not display non-engl
 6. I discovered that you need a seperate circuit to upload the code to arduino nano.
 
 
-
+## Video
+https://youtube.com/shorts/N0qph9OYE1w?feature=share
 
 ## References
 
@@ -175,44 +176,6 @@ I was intially thiking for a translation mask but LCD could not display non-engl
    
 ## p5.js sketch
 https://editor.p5js.org/Avinash190/full/PLFskDQbw
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
